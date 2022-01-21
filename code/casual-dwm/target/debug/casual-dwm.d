@@ -1,0 +1,1 @@
+/home/markus/Documents/GitHub/casual-dwm/code/casual-dwm/target/debug/casual-dwm: /home/markus/Documents/GitHub/casual-dwm/code/casual-dwm/src/file/yaml_loader.rs /home/markus/Documents/GitHub/casual-dwm/code/casual-dwm/src/file.rs /home/markus/Documents/GitHub/casual-dwm/code/casual-dwm/src/main.rs
