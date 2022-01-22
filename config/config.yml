@@ -1,6 +1,15 @@
-name:
-    - lulw
-    - kek
+base:
+  background: /home/markus/seafile/MyLibrary/pics/backgrounds/tree.jpg
+  composing: true
+
 bar:
-    - 1
-    - 2.0
+  cpu: true
+  ram: true
+  sound: true
+  date: true
+  time: true
+
+patches:
+  - safefloats_patch
+  - barstatus_padding
+
