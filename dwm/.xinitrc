@@ -1,4 +1,4 @@
-xset dpms 100 200 260
+xset dpms 60 120 180
 feh --bg-scale /MyLibrary/pics/backgrounds/tree.jpg
 
 picom -f &
@@ -26,6 +26,11 @@ exec dwm
 
 
  dwm
+
+
+
+
+
 
 
 

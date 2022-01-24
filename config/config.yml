@@ -1,7 +1,7 @@
 base:
   background: /MyLibrary/pics/backgrounds/tree.jpg
   composing: true
-  auto_off: slow
+  auto_off: mid
 
 bar:
   cpu: true
