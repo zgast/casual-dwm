@@ -1,6 +1,7 @@
 base:
-  background: /seafile/MyLibrary/pics/backgrounds/tree.jpg
+  background: /MyLibrary/pics/backgrounds/tree.jpg
   composing: true
+  auto_off: slow
 
 bar:
   cpu: true
