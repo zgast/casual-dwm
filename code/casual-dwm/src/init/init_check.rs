@@ -13,13 +13,17 @@ pub fn check_config(config_vec: Vec<Yaml>){
     let mut initrc: Vec<&str> = initrc_file.split("\n").clone().collect();
 
     let composing_activated = config["base"]["composing"].as_bool().unwrap();
-    let background_path = config["base"]["background"].as_str().unwrap();
+    let mut background = String::new();
+    background.push_str(features.get("background").unwrap());
+    background.push_str( config["base"]["background"].as_str().unwrap());
 
     for i in 0 .. initrc.len() {
         if initrc[i].eq(features.get("composing").unwrap()) && !composing_activated{
             initrc[i] = features.get("composing_deactivated").unwrap();
         }else if initrc[i].eq(features.get("composing_deactivated").unwrap()) && composing_activated{
             initrc[i] = features.get("composing").unwrap();
+        } else if initrc[i].contains(features.get("background").unwrap()) && !initrc[i].eq(&background) {
+            initrc[i] = &*background;
         }
     }
 

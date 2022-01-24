@@ -1,5 +1,5 @@
   xset dpms 60 120 180
-feh --bg-scale  /home/markus/seafile/MyLibrary/pics/backgrounds/mount.jpg
+feh --bg-scale /seafile/MyLibrary/pics/backgrounds/tree.jpg
 
 picom -f &
 
@@ -23,4 +23,15 @@ sleep 0.2s
 done &
 
 exec dwm
+
+
+
+
+
+
+c dwm
+
+
+
+
 

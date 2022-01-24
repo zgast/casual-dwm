@@ -1,5 +1,5 @@
 base:
-  background: /home/markus/seafile/MyLibrary/pics/backgrounds/tree.jpg
+  background: /seafile/MyLibrary/pics/backgrounds/tree.jpg
   composing: true
 
 bar:
