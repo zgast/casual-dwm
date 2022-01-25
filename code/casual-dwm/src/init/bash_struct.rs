@@ -12,5 +12,20 @@ pub fn bash_struct() -> HashMap<String, String> {
     map.insert(String::from("auto_off_slow"),String::from("xset dpms 100 200 260"));
     map.insert(String::from("auto_off_off"),String::from(" # xset dpms 100 200 260"));
     map.insert(String::from("auto_off_generic"),String::from("xset dpms"));
+
+
+    map.insert(String::from("cpu_on"),String::from("    CPU=\"$(echo -e \"\\uf2db\") $(top -b -n1 | grep \"Cpu(s)\" | awk '{print $2 + $4}')% / 100%\""));
+    map.insert(String::from("cpu_off"),String::from("    CPU=\"\""));
+
+
+    map.insert(String::from("mem_on"),String::from("    MEM=\"$(echo -e \"\\uf1c0\") $(free -m | grep '^Mem' | awk '{print  $3 \" MB / \" $2\" MB\"}')\""));
+    map.insert(String::from("mem_off"),String::from("    MEM=\"\""));
+
+    map.insert(String::from("date_on"),String::from("    DATE=\"$(echo -e \"\\uf133\") $(date +\"%d.%m.%Y\")\""));
+    map.insert(String::from("date_off"),String::from("    DATE=\"\""));
+
+    map.insert(String::from("time_on"),String::from("    TIME=\"$(echo -e \"\\uf017\") $(date \"+%R\")\""));
+    map.insert(String::from("time_off"),String::from("    TIME=\"\""));
+
     return map;
 }

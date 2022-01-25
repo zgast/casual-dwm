@@ -4,11 +4,14 @@ base:
   auto_off: mid
 
 bar:
-  cpu: true
-  ram: true
-  sound: true
-  date: true
-  time: true
+  cpu: false
+  ram: false
+  date: false
+  time: false
+  spacer: '                   ' 
+  start: ''
+  end: ''
+
 
 patches:
   - safefloats_patch
