@@ -1,8 +1,14 @@
+# confige for base system
 base:
+  # change background
   background: /MyLibrary/pics/backgrounds/tree.jpg
+  # adds transparency and animations at opening and losing windows
   composing: true
+  # defines how fast PC turns off when unactive (to save battery for example) 
+  # modes = fast, mid, slow, off
   auto_off: mid
 
+# defines what get shown in the upper left at the dwm bar
 bar:
   cpu: false
   ram: false
