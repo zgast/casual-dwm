@@ -1,0 +1,15 @@
+shortcuts:
+  - super + p = rofi
+  - super + l = lock
+  - super + plus = master_plus
+  - super + minus = master_minus
+  - super + t = tiled
+  - super + f = floating
+  - super + g = grid
+  - print = screenshot
+  - control + print = screenshot_window
+  - super + m = monocole
+  - super + shift + m = shift_window_master
+  - super + shift + _numrow_ = change_window_tab
+  - super + shift + q = quit_dwm
+  - super + shift + c = quit_window 

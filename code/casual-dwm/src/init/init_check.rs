@@ -1,5 +1,5 @@
 use yaml_rust::Yaml;
-use crate::init::bash_struct::bash_struct;
+use crate::init::init_map::init_map;
 use crate::file::file_loader::read_file;
 use crate::file::file_writer::write_to_file;
 
@@ -8,7 +8,7 @@ pub fn check_config(config_vec: Vec<Yaml>){
     let initrc_file =  read_file(path);
 
     let config = &config_vec[0];
-    let features = bash_struct();
+    let features = init_map();
     let mut initrc: Vec<&str> = initrc_file.split("\n").clone().collect();
 
 
@@ -74,8 +74,6 @@ pub fn check_config(config_vec: Vec<Yaml>){
             initrc[i] = &*start;
         }
     }
-
-    println!("{:?}", initrc);
 
     let mut output = String::new();
     for line in initrc{

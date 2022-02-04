@@ -20,3 +20,5 @@ sleep 0.2s
 done &
 
 exec dwm
+
+

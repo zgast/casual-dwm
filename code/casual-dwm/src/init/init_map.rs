@@ -1,5 +1,5 @@
 use std::collections::HashMap;
-pub fn bash_struct() -> HashMap<String, String> {
+pub fn init_map() -> HashMap<String, String> {
     let mut map = HashMap::new();
 
     map.insert(String::from("composing"),String::from("picom -f &"));
@@ -13,10 +13,8 @@ pub fn bash_struct() -> HashMap<String, String> {
     map.insert(String::from("auto_off_off"),String::from(" # xset dpms 100 200 260"));
     map.insert(String::from("auto_off_generic"),String::from("xset dpms"));
 
-
     map.insert(String::from("cpu_on"),String::from("    CPU=\"$(top -b -n1 | grep \"Cpu(s)\" | awk '{print $2 + $4}')% / 100%\""));
     map.insert(String::from("cpu_off"),String::from("    CPU=\"\""));
-
 
     map.insert(String::from("mem_on"),String::from("    MEM=\"$(free -m | grep '^Mem' | awk '{print  $3 \" MB / \" $2\" MB\"}')\""));
     map.insert(String::from("mem_off"),String::from("    MEM=\"\""));
